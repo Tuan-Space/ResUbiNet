@@ -1,0 +1,27 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "My Python Script",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/train_CNN_10fold_ensemble.py",
+            "args": [
+              "-input", "modified_training.fasta",
+              "-output", "models/my_model/",
+              "-residue-types", "K",
+              "-nclass", "1",
+              "-window", "21",
+              "-maxneg", "1",
+              "-earlystop", "10",
+              "-checkpointweights", "models/my_model/",
+              "-load_average_weight",
+              "-balance_val"
+            ],
+            "console": "integratedTerminal"
+          }
+    ]
+}
