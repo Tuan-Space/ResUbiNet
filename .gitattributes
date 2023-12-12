@@ -1,0 +1,6 @@
+ResUbiNet filter=lfs diff=lfs merge=lfs -text
+data_preprocessing filter=lfs diff=lfs merge=lfs -text
+other_classfier filter=lfs diff=lfs merge=lfs -text
+other_ubi_models filter=lfs diff=lfs merge=lfs -text
+protein_characterization filter=lfs diff=lfs merge=lfs -text
+single_input filter=lfs diff=lfs merge=lfs -text
