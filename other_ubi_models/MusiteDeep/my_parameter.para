@@ -1,0 +1,5 @@
+conda run -n mu2 python train_CNN_10fold_ensemble.py -input modified_training_33.fasta -output models/my_model/CNNmodels/ -residue-types K -nclass 1 -maxneg 1 -window 16 -earlystop 10 -checkpointweights models/my_model/CNNmodels/ -load_average_weight
+
+conda run -n mu2 python train_capsnet_10fold_ensemble.py -input modified_training_33.fasta -output models/my_model/capsmodels/ -residue-types K -nclass 1 -maxneg 1 -window 16 -earlystop 10 -checkpointweights models/my_model/capsmodels/ -load_average_weight
+
+conda run -n mu2 python predict_multi_batch.py -input independent_33.fasta -output models/my_model/  -model-prefix models/my_model/
