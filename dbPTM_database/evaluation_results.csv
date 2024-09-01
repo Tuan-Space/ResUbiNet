@@ -1,0 +1,2 @@
+Type,ACC,Sn,Sp,Precision,F1-score,AUC,MCC
+Average Test Predictions,0.7086,0.6115,0.8057,0.7589,0.6773,0.7736,0.4253
